@@ -1,0 +1,28 @@
+# IT 140 Module Three Assignment
+# Paycheck Calculator Pseudocode Template
+#
+# Replace every TODO prompt with your own pseudocode.
+# Keep this file in .pseudo format for submission.
+#
+# Your finished pseudocode should represent the same logic as your flowchart.
+# Use clear indentation and ALLCAPS pseudocode keywords, such as GET (input),
+# PUT (output), LET (assignment), IF, ELSE, and ENDIF where they fit your design.
+
+START paycheck_calculator
+
+    GET hours_worked
+
+    IF hours_worked <= 40
+        LET paycheck = hours_worked * 20
+    ELSE
+        LET regular_pay = 40 * 20
+        LET overtime_hours = hours_worked - 40
+        LET overtime_pay = overtime_hours * 30
+        LET paycheck = regular_pay + overtime_pay
+    ENDIF
+
+    PUT paycheck
+
+END paycheck_calculator
+# === References ===
+# TODO: List outside sources or assistance you actually used, or delete this line.
