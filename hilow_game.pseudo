@@ -1,0 +1,41 @@
+# IT 140 Module Four Assignment
+# Higher/Lower Game Pseudocode Template
+#
+# Complete the TODO prompts below with your own pseudocode.
+# Keep this file in .pseudo format for submission.
+#
+# Use clear indentation to show decisions and repeated behavior.
+# Your finished pseudocode should address every requirement in the
+# current Module Four Assignment Guidelines and Rubric.
+
+START hilow_game
+
+    # Establish a valid guessing range.
+    GET lower_bound
+    GET upper_bound
+
+WHILE lower_bound >= upper_bound
+        GET lower_bound
+        GET upper_bound
+    ENDWHILE
+
+
+    WHILE guess != random_number
+        IF guess < random_number
+            PUT "Too low"
+        ELSE
+            PUT "Too high"
+        ENDIF
+
+        GET guess
+
+        WHILE guess < lower_bound OR guess > upper_bound
+            GET guess
+        ENDWHILE
+    ENDWHILE
+
+    PUT "Correct!"
+
+END hilow_game
+
+# === References ===
