@@ -1,0 +1,35 @@
+# Project One Get-Item Pseudocode
+#
+# Graded checkpoint: Module Five Project One
+# Later use: get-item and inventory design for M7 Project Two
+#
+# Review the course-provided get-item flowchart before completing this file.
+# Write pseudocode, not Python code. Use clear indentation and course-appropriate
+# keywords such as INPUT, OUTPUT, IF, ELSE, SET, ADD, or similar terms.
+
+START get_item
+
+    SET current_room to the player's current room
+    SET room_item to the item in the current room
+    SET inventory to the player's current inventory
+
+    OUTPUT "Enter your move: get [item]"
+    INPUT player_command
+
+    IF player_command requests the item in room_item.
+
+        ADD room_item to inventory
+        OUTPUT room_item "retrieved!"
+        SET room_item to no item
+
+    ELSE
+        OUTPUT "Can't get that item!"
+    END IF
+
+    RETURN to the main game loop
+
+END get_item
+
+
+# References
+
